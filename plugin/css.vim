@@ -9,15 +9,11 @@ try
 
     call extend(g:LanguageClient_serverCommands, s:params)
 
-    let s:cm_params = {'word_pattern': '[\w\-]+',
-                \ 'cm_refresh_patterns':['[\w\-]+\s*:\s+'],
-                \ }
-
     let s:sources_override = {
                 \ 'cm-css': { 'enable', 0 },
-                \ 'LanguageClient_css': s:cm_params,
-                \ 'LanguageClient_less': s:cm_params,
-                \ 'LanguageClient_sass': s:cm_params,
+                \ 'LanguageClient_css': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] },
+                \ 'LanguageClient_less': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] },
+                \ 'LanguageClient_sass': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] }
                 \}
 
     call extend(g:cm_sources_override, s:sources_override)
