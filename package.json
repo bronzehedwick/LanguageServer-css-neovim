@@ -1,0 +1,22 @@
+{
+  "name": "languageserver-ts-neovim",
+  "version": "1.0.0",
+  "description": "A simple Javascript/TypeScript language server plugin for [LanguageClient-neovim](https://github.com/autozimu/LanguageClient-neovim).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CandySunPlus/LanguageServer-ts-neovim.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CandySunPlus/LanguageServer-ts-neovim/issues"
+  },
+  "homepage": "https://github.com/CandySunPlus/LanguageServer-ts-neovim#readme",
+  "dependencies": {
+    "vscode-css-languageserver-bin": "^1.3.0"
+  }
+}
