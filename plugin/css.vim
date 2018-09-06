@@ -4,7 +4,8 @@ try
 
     let s:params = { 'css': [s:ls, '--stdio'],
                 \ 'less': [s:ls, '--stdio'],
-                \ 'sass': [s:ls, '--stdio']
+                \ 'sass': [s:ls, '--stdio'],
+                \ 'scss': [s:ls, '--stdio']
                 \}
 
     call extend(g:LanguageClient_serverCommands, s:params)
@@ -13,7 +14,8 @@ try
                 \ 'cm-css': { 'enable', 0 },
                 \ 'LanguageClient_css': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] },
                 \ 'LanguageClient_less': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] },
-                \ 'LanguageClient_sass': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] }
+                \ 'LanguageClient_sass': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] },
+                \ 'LanguageClient_scss': {'word_pattern': '[\w\-]+', 'scoping': 1, 'cm_refresh_patterns':['[\w\-]+\s*:\s+'] }
                 \}
 
     call extend(g:cm_sources_override, s:sources_override)
